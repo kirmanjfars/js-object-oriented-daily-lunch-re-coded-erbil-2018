@@ -43,7 +43,9 @@ class Meal{
     }
     
     byPrice(){
-      return  
+      return  store.meals.sort(function(a,b){
+        return a-b;
+      })
     }
   
 
