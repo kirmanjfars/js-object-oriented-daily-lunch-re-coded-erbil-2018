@@ -58,6 +58,8 @@ class Delivery{
     store.deliveries.push(this);
   }
   
-  
+  meal(){
+   return store.deliveries.filter(d=> d.neighborhoodId === this.id)
+  }
 }
 
