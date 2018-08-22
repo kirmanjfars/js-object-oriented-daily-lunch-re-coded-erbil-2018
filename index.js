@@ -34,15 +34,14 @@ class Meal{
     store.meals.push(this);
   }
   
-  deliveries(){
-    return store.deliveries.filter(d => d.mealId === this.id)
-  }
-  
-  customers() {
+  deliveries() {
+      return store.deliveries.filter(delivery => delivery.mealId === this.id);
+    }
+
+    customers() {
       const allCustomers = this.deliveries().map(delivery => delivery.customer());
       return [...new Set(allCustomers)];
-  }
-    
+    }
   
 
 }
