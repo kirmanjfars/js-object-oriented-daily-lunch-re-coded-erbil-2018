@@ -43,10 +43,11 @@ class Meal{
       return store.deliveries.filter(delivery => delivery.mealId === this.id);
     }
 
-    customers() {
+     customers() {
       const allCustomers = this.deliveries().map(delivery => delivery.customer());
       return [...new Set(allCustomers)];
     }
+
     
     static byPrice(){
       return  store.meals.sort(function(a,b){
