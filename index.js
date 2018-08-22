@@ -63,7 +63,7 @@ class Delivery{
   }
   
   customer(){
-    return store.customer.find(d => d.id = this.customerId)
+    return store.customers.find(d => d.id = this.customerId)
   }
 }
 
