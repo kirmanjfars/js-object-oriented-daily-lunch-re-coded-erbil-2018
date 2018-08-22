@@ -51,9 +51,9 @@ class Customer{
     return store.deliveries.filter(c => c.customerId === this.id)
   }
   
-  meals(){
-    return store.meals.filter(m=> m.customerId === this.id )
-  }
+ meals() {
+      return this.deliveries().map(delivery => delivery.meal());
+    }
 }
 
 
