@@ -38,9 +38,11 @@ class Meal{
     return store.deliveries.filter(d => d.mealId === this.id)
   }
   
-  customers(){
-    return store.deliveries().filter(d => d.customerId === this.customerId)
-  }
+  customers() {
+      const allCustomers = this.deliveries().map(delivery => delivery.customer());
+      return [...new Set(allCustomers)];
+    }
+
 }
 
 
