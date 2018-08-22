@@ -52,7 +52,7 @@ class Customer{
   }
   
   meals(){
-    return store.meals.filter(m=> this.id === )
+    return store.meals.filter(m=> m.customerId === this.id )
   }
 }
 
