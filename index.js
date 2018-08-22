@@ -48,7 +48,7 @@ class Customer{
   
   
   deliveries(){
-    return store.deliveries.filter(c => c.customerId == this.id)
+    return store.deliveries.filter(c => c.customerId === this.id)
   }
 }
 
@@ -71,7 +71,7 @@ class Delivery{
     return store.customers.find(d => d.customerId = this.id)
   }
   neighborhood(){
-    return store.neighborhoods.find(d => d.neighborhoodId = this.id)
+    return store.neighborhoods.find(d => d.neighborhoodId == this.id)
 
   }
 }
