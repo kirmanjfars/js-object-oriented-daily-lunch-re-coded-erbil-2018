@@ -48,7 +48,7 @@ class Customer{
   
   
   deliveries(){
-    return store.customers.filter(c => c.id = this.customerId)
+    return store.deliveries.filter(c => c.id = this.customerId)
   }
 }
 
