@@ -33,6 +33,10 @@ class Meal{
     this.id = mealIds++;
     store.meals.push(this);
   }
+  
+  deliveries(){
+    
+  }
 }
 
 
