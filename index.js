@@ -41,6 +41,10 @@ class Meal{
       const allCustomers = this.deliveries().map(delivery => delivery.customer());
       return [...new Set(allCustomers)];
     }
+    
+    byPrice(){
+      
+    }
   
 
 }
