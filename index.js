@@ -32,31 +32,34 @@ class Neighborhood{
 }
 
 
-class Meal{
-  constructor(title, price){
-    this.title = title; 
-    this.price = price;
-    this.id = mealIds++;
-    store.meals.push(this);
-  }
-  deliveries() {
-      return store.deliveries.filter(delivery => delivery.mealId === this.id);
-    }
+// class Meal{
+//   constructor(title, price){
+//     this.title = title; 
+//     this.price = price;
+//     this.id = mealIds++;
+//     store.meals.push(this);
+//   }
+//   deliveries() {
+//       return store.deliveries.filter(delivery => delivery.mealId === this.id);
+//     }
 
-     customers() {
-      const allCustomers = this.deliveries().map(delivery => delivery.customer());
-      return [...new Set(allCustomers)];
-    }
+//     customers() {
+//       const allCustomers = this.deliveries().map(delivery => delivery.customer());
+//       return [...new Set(allCustomers)];
+//     }
 
     
-    static byPrice(){
-      return  store.meals.sort(function(a,b){
-        return a.price < b.price;
-      })
-    }
+//     static byPrice(){
+//       return  store.meals.sort(function(a,b){
+//         return a.price < b.price;
+//       })
+//     }
   
 
-}
+// }
+
+
+
 
 
 
