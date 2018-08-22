@@ -50,6 +50,10 @@ class Customer{
   deliveries(){
     return store.deliveries.filter(c => c.customerId === this.id)
   }
+  
+  meals(){
+    return store.meals.filter(m=> m.customerId == this.id)
+  }
 }
 
 
