@@ -59,7 +59,11 @@ class Delivery{
   }
   
   meal(){
-   return store.meals.fin(d=> d.id === this.mealId)
+   return store.meals.find(d=> d.id === this.mealId)
+  }
+  
+  customer(){
+    return store.customer.find(d => d.id = this.customerId)
   }
 }
 
