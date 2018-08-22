@@ -26,7 +26,7 @@ class Neighborhood{
 }
 
 
-cconst Meal = (() => {
+const Meal = (() => {
   let mealIds = 1;
   return class {
     constructor(title, price = 0) {
