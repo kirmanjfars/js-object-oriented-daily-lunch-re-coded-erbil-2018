@@ -22,6 +22,10 @@ class Neighborhood{
   customers(){
     return store.customers.filter(d=> d.neighborhoodId === this.id)
   }
+  
+  meals(){
+    
+  }
 
 }
 
