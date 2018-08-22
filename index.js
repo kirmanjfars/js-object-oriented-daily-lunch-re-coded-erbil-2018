@@ -72,7 +72,6 @@ class Delivery{
   }
   neighborhood(){
     return store.neighborhoods.find(d => d.neighborhoodId == this.id)
-
   }
 }
 
