@@ -59,7 +59,7 @@ class Delivery{
   }
   
   meal(){
-   return store.deliveries.filter(d=> d.deliveryId === this.id)
+   return store.deliveries.filter(d=> d.deliveryIds === this.id)
   }
 }
 
