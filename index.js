@@ -74,7 +74,8 @@ class Customer{
     totalSpent(){
       
       return Meal.byPrice.reduce(function(ac, e){
-        return ac += e.price;
+         ac += e.price;
+         return ac;
       });
       
     }
