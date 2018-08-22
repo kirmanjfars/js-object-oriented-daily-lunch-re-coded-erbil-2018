@@ -76,7 +76,7 @@ class Customer{
       return this.meals.reduce(function(ac, e){
       
          return    ac += e.price;;
-      });
+      }, 0);
       
     }
 }
